@@ -6,6 +6,7 @@ from entity.like_entity import LikeEntity
 from entity.post_entity import PostEntity
 from entity.user_entity import UserEntity
 from fastapi import FastAPI
+from controller import FastAPI
 
 app = FastAPI()
 

@@ -84,7 +84,6 @@ const Login = () => {
 
     return true;
   };
-
   const setLoginPage = () => {
     refs.current.idElement.focus();
     const rememberId = JSON.parse(localStorage.getItem("rememberId"));
@@ -93,7 +92,7 @@ const Login = () => {
       refs.current.rememberMeElement.checked = true;
     }
   };
-
+  
   useEffect(() => {
     setLoginPage();
   }, []);
