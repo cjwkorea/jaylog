@@ -1,10 +1,8 @@
+
 from pydantic import BaseModel
 
 
 class ResDTO(BaseModel):
     code: int
-    message: str = ""
+    message: str
     content: object | None = None
-
-    # class Config:
-    #     orm_mode = True
